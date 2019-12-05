@@ -4,13 +4,12 @@
 
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-6464a4ab71503774.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-**昨天生成了动态库今天就新建了一个项目，测试了一下**
+**昨天生成了动态库，[动态库生成看这里](https://www.jianshu.com/p/9e97bb5b1ce5)，今天就新建了一个项目，测试了一下库的使用如下**
 
 
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-86ddf5b297841137.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **目录结构如下图：**
-
 
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-80f399d4e55820ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
