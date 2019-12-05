@@ -1,17 +1,26 @@
 # myffmpeg
 **安卓开发者万里长城又走了一步，真是痛快**
+
+
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-6464a4ab71503774.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **昨天生成了动态库今天就新建了一个项目，测试了一下**
+
+
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-86ddf5b297841137.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **目录结构如下图：**
+
+
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-80f399d4e55820ba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **首先新建一个c++项目，新建完了会有一个cpp的文件夹，新建项目的Mainactivity要用java不要用kotlin，这个很坑的，kotlin目前好像不行，不知道是不是我没找到方法，卡这里至少掉了十根头发**
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-d8b72b477e4f9657.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 这个CMakeLists.txt也很坑的，开始看的网上的Adroid.mk和Application.mk,技不如人，看着人家一步一步搞的，自己的有问题，最后发现CMakeLists.txt就是替换Adroid.mk和Application.mk这两个东西的
 **还有include这个文件夹，开始放到cpp下面，native-lib可以引入头文件，放到jniLibs目录下就无法引入了，这个最后写的绝对路径```"./../jniLibs/include/libavcodec/avcodec.h"```这样的*，然后include头文件的.h文件很挫有错误的，就改，原本```#include "libavutil/rational.h"```修改为```#include "../libavutil/rational.h"```,有十来个文件把一个一个改**
+
 ![image.png](https://upload-images.jianshu.io/upload_images/4752376-e822ebd1061b8234.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 **CMakeLists.txt配置**
 ```
@@ -242,7 +251,7 @@ Java_com_ffmpeg_myffmpeg_MainActivity1_avcodecinfo(
 
 
 ```
-**MainActivity原码，这里开始十Mainactivity.kt,最后修改为Mainactivity.java,报错，又修改为了MainActivity1.java的**
+**MainActivity原码，这里开始是Mainactivity.kt,最后修改为Mainactivity.java,报错，又修改为了MainActivity1.java的**
 ```
 package com.ffmpeg.myffmpeg;
 
